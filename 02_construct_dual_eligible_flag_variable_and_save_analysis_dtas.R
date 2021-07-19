@@ -71,6 +71,7 @@ snf_denom[zipdat11_18,c("med_inc_18adj", "pct_in_poverty") := .(med_inc_18adj, p
           on=c("bene_zip","adm_yr")]
 
 ### merge in LTC Focus data
+### publicly available at https://ltcfocus.org/data
 ## ltc focus
 ltc_focus <- read_dta("/PATH/LTC_Focus_2000_2017.dta") %>% 
   mutate(prvdr_num=as.character(SNF_Prvdr_Num),
