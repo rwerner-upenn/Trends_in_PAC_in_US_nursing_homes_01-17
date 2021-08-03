@@ -115,7 +115,7 @@ quit; *46,954,754;
 
 *Export data set to Stata file;
 proc export data=snf_2000_2018_denom
-                        outfile="/project/PACUse_RWerner/Nate/Temp_Data/snf_adm_2000_2018_medpar_denom.dta" dbms=dta replace;
+                        outfile="/PATH/snf_adm_2000_2018_medpar_denom.dta" dbms=dta replace;
 run;
 
 ******************************************************
